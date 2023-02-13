@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        Credit-Card-Details
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="container">
+        <div class="card-container">
+            <div class="front">
+                <div class="image">
+                    <img src="chip.png" width="15%" >
+                    <img src="mastercard.png"  width="20%" >
+
+                </div>
+
+
+                <div class="card-number-box">####  #### #### ####</div>
+                <div class="flexbox">
+                    <div class="box">
+                        <span>card holder</span>
+                        <div class="card-holder-name">full name</div>
+                    </div>
+                    
+                    
+                        <div class="box" >
+                            <span>expires</span>
+                            <div class="expiration">
+                                <span class="exp-month">mm</span>
+                                <span class="exp-year">yy</span>
+
+                            </div>
+                         </div>
+                </div>
+            </div>
+            <div class="back">
+                <div class="stripe"></div>
+                <div class="box">
+                    <span>cvv</span>
+                    <div class="cvv-box"></div>
+                    <img src="mastercard 1.png"  width="20%">
+                </div>
+            </div>
+
+        </div>
+
+        <form action="database.php" method="POST">
+            <div class="inputBox">
+                <span>card number</span>
+                <input type="text" maxlength="16" class="card-number-input" name="CardNumber" required="" >
+            </div>
+
+            <div class="inputBox">
+                <span>card holder</span>
+                <input type="text"  class="card-holder-input" name="CardHolder" required="" >
+            </div>
+            <div class="flexbox">
+                <div class="inputBox">
+                    <span>expiration mm</span>
+                    <select name="exmonth" id="" class="month-input">
+                        <option value="month" selected disabled>month</option>
+                        <option>01</option>
+                        <option>02</option>
+                        <option>03</option>
+                        <option>04</option>
+                        <option>05</option>
+                        <option>06</option>
+                        <option>07</option>
+                        <option>08</option>
+                        <option>09</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                    </select>
+                </div>
+                
+                <div class="inputBox">
+                    <span>expiration yy</span>
+                    <select name="exyear" id="" class="year-input">
+                        <!-- <option value="2012">2012</option>
+                        <option value="2013">2013</option>
+                        <option value="2014">2014</option>
+                        <option value="2015">2015</option>
+                        <option value="2016">2016</option>
+                        <option value="2017">2017</option> -->
+                        <option value="2018">2018</option>
+                        <option value="2018">2018</option>
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                        <option value="2026">2026</option>
+                        <option value="2026">2026</option>
+                    </select>
+                </div>
+                <div class="inputBox">
+                    <span>cvv</span>
+                    <input type="text" maxlength="4" class="cvv-input" name="CVV" required="">
+                </div>
+
+            </div>
+             <input type="submit" value="submit" class="submit-btn">
+
+            
+
+           
+        </form>
+    </div>
+
+    <script src="main.js"></script>
+        
+    
+</body>
+
+</html>
